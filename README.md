@@ -26,25 +26,29 @@ Para executar este projeto, você precisa apenas ter instalado:
 
 ## ⚡ Como Rodar a Aplicação
 
-Siga os passos abaixo para iniciar o ambiente:
+Siga os passos abaixo para garantir uma instalação limpa e livre de conflitos com bancos de dados anteriores:
 
 1.  **Clone o repositório e entre na pasta:**
     ```bash
     cd nome-da-pasta
     ```
 
-2.  **Suba os containers (Build & Start):**
-    Utilize o comando abaixo para construir a imagem e iniciar os serviços (API e Banco).
+2.  **Limpe o ambiente (Obrigatório):**
+    Para garantir que o banco de dados seja criado com as credenciais corretas, execute:
+    ```bash
+    docker-compose down -v
+    ```
+
+3.  **Suba os containers:**
+    Utilize o comando abaixo para construir a imagem e iniciar os serviços:
     ```bash
     docker-compose up --build
     ```
 
-3.  **Aguarde a inicialização:**
+4.  **Aguarde a inicialização:**
     O terminal exibirá logs de conexão. Aguarde até ver a mensagem:
     > `✅ Banco de dados inicializado (Tabelas verificadas/criadas).`
     > `🚀 Servidor rodando em http://localhost:3000`
-
-    *O sistema possui um script de migração automática (`initDb.js`) que cria as tabelas `Users`, `Order` e `Items` na primeira execução.*
 
 ---
 
