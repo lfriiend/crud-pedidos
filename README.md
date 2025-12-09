@@ -1,4 +1,4 @@
-# Desafio Técnico - API de Pedidos (Node.js + PostgreSQL)
+# API de Pedidos (Node.js + PostgreSQL)
 
 Esta é uma API RESTful desenvolvida para gerenciar pedidos e itens, utilizando **Node.js (Express)** e **PostgreSQL** (com SQL puro/Native Driver). O projeto conta com autenticação JWT, documentação Swagger e ambiente containerizado com Docker.
 
